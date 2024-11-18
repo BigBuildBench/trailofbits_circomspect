@@ -1,0 +1,24 @@
+[package]
+name = "circomspect-parser"
+version = "2.2.0"
+edition = "2021"
+rust-version = "1.65"
+build = "build.rs"
+license = "LGPL-3.0-only"
+description = "Support crate for the Circomspect static analyzer"
+repository = "https://github.com/trailofbits/circomspect"
+authors = [
+  "Hermenegildo <hermegar@ucm.es>",
+  "Fredrik Dahlgren <fredrik.dahlgren@trailofbits.com>",
+]
+
+[build-dependencies]
+rustc-hex = "2.0"
+lalrpop = { version = "0.20", features = ["lexer"] }
+num-bigint-dig = "0.8"
+num-traits = "0.2"
+
+[dependencies]
+
+[dev-dependencies]
+program_structure = { package = "circomspect-program-structure", version = "2.1.4", path = "../program_structure" }

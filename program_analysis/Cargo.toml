@@ -1,0 +1,15 @@
+[package]
+name = "circomspect-program-analysis"
+version = "0.8.2"
+edition = "2021"
+rust-version = "1.65"
+license = "LGPL-3.0-only"
+authors = ["Trail of Bits"]
+description = "Support crate for the Circomspect static analyzer"
+repository = "https://github.com/trailofbits/circomspect"
+
+[dependencies]
+
+[dev-dependencies]
+parser = { package = "circomspect-parser", version = "2.2.0", path = "../parser" }
+program_structure = { package = "circomspect-program-structure", version = "2.1.4", path = "../program_structure" }
